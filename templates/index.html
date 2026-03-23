@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAN Scanner</title>
+</head>
+<body>
+
+<h2>LAN Device Scanner</h2>
+
+<form method="POST">
+    IP Range:
+    <input type="text" name="ip" placeholder="192.168.1.1/24">
+    <button type="submit">Scan</button>
+</form>
+
+<br><br>
+
+<table border="1">
+<tr>
+    <th>IP</th>
+    <th>MAC</th>
+    <th>Vendor</th>
+</tr>
+
+{% for d in devices %}
+<tr>
+    <td>{{ d.ip }}</td>
+    <td>{{ d.mac }}</td>
+    <td>{{ d.vendor }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
