@@ -13,7 +13,7 @@ This project is a Layer 2 network scanning tool built using Python and Scapy.
 - Scapy
 - Flask
 - Kali Linux
-- Wireshark
+- HTML
 
 ## Description
 The scanner sends ARP broadcast packets in the local network and collects responses to identify active devices.
